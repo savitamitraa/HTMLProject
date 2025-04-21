@@ -1,0 +1,128 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title> HTML MITRAA </title>
+        <meta name="Author" content="Mitraa" />
+        <meta name="Description" content="This is the first page created by Mitraa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+
+        <header>
+            The HEADER starts here.
+
+        </header>
+        
+        <main>
+            The MAIN starts here.
+            <h2>KYC Form</h2>
+            <form>
+                <fieldset>
+                    <legend><strong>Account Information</strong></legend>
+                    <label for="kycDate">KYC Date:</label>
+                    <input type="date" id="kycdate" name="kycdate"> <br><br>
+                    <label for="accno">Account No:</label>
+                    <input type="number" id="accno" name="accno"><br><br>
+                    <label for="acctype">Account Type:</label>
+                    <label for="acctype1">Savings:</label>
+                    <input type="radio" id="acctype1" name="acctype">
+                    <label for="acctype2">Current:</label>
+                    <input type="radio" id="acctype2" name="acctype">
+                    <label for="acctype3">Term Deposit:</label>
+                    <input type="radio" id="acctype3" name="acctype"><br><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="caddress">Current Address:</label>
+                    <textarea id="caddress" name="caddress" rows="4" cols="50">
+                    </textarea><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="gender1">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="gender2">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="gender3">Other</label>
+                    <br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select>
+                    <optgroup label="Gender">
+                        <option value="M">Male</option>
+                        <option value="F">Fenale</option>
+                        <option value="O">Other</option>
+                    </optgroup></select><br><br>
+                
+                    <label for="resStatus">Residential Status:</label><br>
+                    <input type="radio" id="resind" name="resStatus" value="ResidentialIndian">
+                    <label for="resStatus1">Residential Individual</label>
+                    <input type="radio" id="foreign" name="resStatus" value="ForeignNational">
+                    <label for="resStatus2">Foreign National</label>
+                    <input type="radio" id="nri" name="resStatus" value="Non-ResidentIndian">
+                    <label for="resStatus3">Non-Resident Indian</label>
+                    <br><br>
+
+                    <label for="bDate">Date of Birth:</label>
+                    <input type="date" id="bdate" name="bdate"> <br><br>
+                    
+                    <label for="telephone">Telephone:</label>
+                    <input type="telcountry" id="telcountry" name="telcountry" pattern="^\+\d{2}" required>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="pemail" name="pemail"><br><br>
+
+                    <label for="marStatus">Marrital Status:</label><br>
+                    Radio buttons with 3 options viz; Married, Single, Other <br><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Professional Information</legend>
+                    <label for="occStatus">Occupation Type:</label><br>
+                    Check boxes with options viz; S-Service, Private Sector, Public Sector, Other, Professional, Self-Employed, Retired, Housewife, Student, Business, Non-Categorised <br><br>
+
+                    <label for="vehicle">Vehicles I own:</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label><br><br>
+                
+                    <label for="weight">Weight:</label><br>
+                    <input type="range" id="weight" name="weight" min="10" max="200">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Extra Controls</legend>
+                    <audio controls autoplay>
+                        <source src="gorila-315977.mp3" type="audio/mpeg" >
+                        Your browser does not support the audio element.
+                      </audio>
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/-moW9jvvMr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <!-- In case of youtube videos, you only need to copy the video address after the =1dY57CDxR14 sign and paste it after embed/, rest all remains the same. -->
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <input type="submit" value="Submit">
+                </fieldset>
+    
+            </form>
+        </main>
+
+        <footer>
+            The FOOTER starts here.
+            
+        </footer>
+
+        <script> </script> <!-- This is for js code -->
+        
+    </body>
+
+</html>
